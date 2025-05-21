@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:testing_project/controllers/theme_provider/theme_provider.dart';
+import 'package:testing_project/views/auth_module/main_auth_screen.dart';
+import 'package:testing_project/views/auth_module/sign_in_screen1.dart';
 import 'package:testing_project/views/theme_module/theme_screen.dart';
 
 void main() {
@@ -30,7 +32,9 @@ class MyApp extends StatelessWidget {
             useMaterial3: true,
             brightness: provider.isDark ? Brightness.dark : Brightness.light
           ),
-          home: const ThemeScreen(),
+          home:SignInScreen1()
+          //MainAuthScreen()
+          // const ThemeScreen(),
         );
       },
     );
